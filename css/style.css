@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 20px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -15,22 +19,43 @@ ul {
     list-style-type: none;
 }
 
+h1 {
+    font-size: 50px;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+}
+
+.small-button {
+    padding: 7px 12px;
+    border-radius: 15px;
+}
+
+.big-button {
+    padding: 7px 14px;
+    border-radius: 21px;
+    margin: 0px 10px;
+}
+
 .centered {
-    width: 70%;
-    margin: auto;
+    padding: 30px 15%;
 }
 
 /* Intestazione */
 
 header {
     color: #ffffff;
-    padding-top: 30px;
+    padding: 30px;
 
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    font-size: 16px;
 }
 
 header nav ul {
@@ -38,8 +63,26 @@ header nav ul {
     flex-basis: 600px;
     justify-content: space-between;
 
-
 }
+
+.jumbotron {
+    margin: 90px;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    margin-bottom: 40px;
+}
+
+.jumbotron p {
+    margin-bottom: 30px;
+}
+
+.jumbotron button.black-back {
+    color: #ffffff;
+    background-color: #23272a;
+}
+
 
 
 
@@ -48,7 +91,7 @@ header nav ul {
 /* DEBUG */
 
 header {
-    min-height: 300px;
+    min-height: 400px;
     background-color: #255ee9;
 }
 
