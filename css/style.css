@@ -23,6 +23,10 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    margin-bottom: 20px;
+}
+
 button {
     text-decoration: none;
     border: none;
@@ -89,27 +93,46 @@ header {
 
 /* corpo principale */
 
-section:nth-of-type(even) {
-    background-color: #f6f6f6;
-}
+    /* middle sections */
 
-section {
-    height: 400px;
-    display: flex;
-    justify-content: space-between;
-}
+    section:nth-of-type(even) {
+        background-color: #f6f6f6;
+    }
 
-section .col.img {
-    width: 600px;
-    margin: 20px;
-}
+    /* ogni seconda riga della sezione in mezzo, nel caso se ne aggiungano in futuro */
+    section.middle-section:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
 
-section .col.text {
-    width: 400px;
-    margin: 20px;
-    padding: 20px;
-}
+    section.middle-section {
+        min-height: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
 
+    section .col.img {
+        width: 600px;
+        margin: 20px;
+    }
+
+    section .col.text {
+        width: 400px;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    /* last section */
+
+    section.end-section {
+        height: 700px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    
 
 
 /* Footer */
@@ -121,15 +144,14 @@ footer {
 
 
 
+
+
+
 /* DEBUG */
 
 header {
     background-color: #255ee9;
 }
-
-/* section {
-    background-color: rgba(253, 253, 169, 0.89);
-} */
 
 section .img {
     background-color: #66d4cd;
@@ -138,6 +160,10 @@ section .img {
 section .text {
     background-color: rgb(247, 158, 126);
     border: solid 2px black;
+}
 
+.end-section .img {
+    height: 350px;
+    width: 700px;
 }
 
