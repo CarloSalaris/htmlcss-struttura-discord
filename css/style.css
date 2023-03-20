@@ -44,7 +44,7 @@ button {
 }
 
 .centered {
-    padding: 30px 25%;
+    padding: 30px 20%;
 }
 
 /* Intestazione */
@@ -106,18 +106,17 @@ header {
 
     section.middle-section {
         height: 600px;
-        padding: 30px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     section .col.img {
-        width: 600px;
+        width: 800px;
         margin: 20px;
     }
 
     section .col.text {
-        width: 400px;
+        width: 500px;
         margin: 20px;
         padding: 20px;
     }
