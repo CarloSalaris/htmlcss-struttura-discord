@@ -8,11 +8,39 @@
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 ul {
     list-style-type: none;
 }
+
+.centered {
+    width: 70%;
+    margin: auto;
+}
+
+/* Intestazione */
+
+header {
+    color: #ffffff;
+    padding-top: 30px;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    flex-basis: 600px;
+    justify-content: space-between;
+
+
+}
+
 
 
 
